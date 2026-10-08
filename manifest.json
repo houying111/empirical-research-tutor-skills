@@ -1,0 +1,68 @@
+{
+  "package": "empirical-apprentice-skills",
+  "version": "1.2.0",
+  "last_updated": "2026-10-08",
+  "description": "实证学徒——面向社科本科生的 AI 实证研究陪练技能包：研究入口调度 + 七类方法/数据陪练 + 方法规范库",
+  "entry": "research-tutor/SKILL.md",
+  "shared": [
+    "_shared/misconception-guards.md",
+    "_shared/academic-integrity.md",
+    "_shared/mastery-rubrics.md"
+  ],
+  "skills": [
+    {
+      "name": "research-tutor",
+      "version": "1.2.0",
+      "entry": "research-tutor/SKILL.md",
+      "role": "入口调度：判断研究阶段，按数据结构与识别条件路由"
+    },
+    {
+      "name": "data-tutor",
+      "version": "1.0.0",
+      "entry": "data-tutor/SKILL.md",
+      "role": "数据准备：体检、样本筛选、缺失/异常值、变量构造、可复现 do-file"
+    },
+    {
+      "name": "ols-tutor",
+      "version": "1.2.0",
+      "entry": "ols-tutor/SKILL.md",
+      "role": "OLS / 线性概率模型：控制变量分类、诊断、CHDES 正规就业本土案例"
+    },
+    {
+      "name": "fe-tutor",
+      "version": "1.2.0",
+      "entry": "fe-tutor/SKILL.md",
+      "role": "面板固定效应：组内识别、吸收问题、FE/RE 选择"
+    },
+    {
+      "name": "did-tutor",
+      "version": "1.2.0",
+      "entry": "did-tutor/SKILL.md",
+      "role": "双重差分：平行趋势、安慰剂、交错 DID（csdid 等）"
+    },
+    {
+      "name": "synctrl-tutor",
+      "version": "1.1.0",
+      "entry": "synctrl-tutor/SKILL.md",
+      "role": "合成控制：无对照组/单一处理单元、donor pool、安慰剂排名"
+    },
+    {
+      "name": "rdd-tutor",
+      "version": "1.1.0",
+      "entry": "rdd-tutor/SKILL.md",
+      "role": "断点回归：sharp/fuzzy、操纵检验、带宽敏感性、RLATE"
+    },
+    {
+      "name": "iv-tutor",
+      "version": "1.0.0",
+      "entry": "iv-tutor/SKILL.md",
+      "role": "工具变量：两条件论证、弱工具诊断、LATE 解读"
+    },
+    {
+      "name": "methods-reference",
+      "version": "1.1.0",
+      "entry": "methods-reference/SKILL.md",
+      "role": "方法规范查询库：七方法统一结构规范表"
+    }
+  ]
+}

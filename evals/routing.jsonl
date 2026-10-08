@@ -1,0 +1,10 @@
+{"id": "route-01", "category": "routing", "skill": "research-tutor", "user": "我有 CFPS 一年的数据，想研究数字素养对就业质量的影响，怎么开始？", "expect": {"route": "ols-tutor"}, "note": "单年横截面 → OLS"}
+{"id": "route-02", "category": "routing", "skill": "research-tutor", "user": "我有 200 多个城市 2005-2020 年的面板，低碳城市试点是同一批城市统一时间生效的，想评估政策效果。", "expect": {"route": "did-tutor"}, "note": "面板+统一点政策冲击 → DID"}
+{"id": "route-03", "category": "routing", "skill": "research-tutor", "user": "智慧城市试点分批公布，有的城市 2012 年进、有的 2013、2014 年才进，这种怎么做？", "expect": {"route": "did-tutor"}, "note": "分批实施 → DID 交错分支"}
+{"id": "route-04", "category": "routing", "skill": "research-tutor", "user": "我研究的政策全国统一实施，所有省份都受影响，根本找不到对照组，只有一个省的数据比较全。", "expect": {"route": "synctrl-tutor"}, "note": "无对照组+单一处理单元 → 合成控制"}
+{"id": "route-05", "category": "routing", "skill": "research-tutor", "user": "国家扶贫重点县是按人均收入低于一条线认定的，我想估计被认定为扶贫县对农民收入的影响。", "expect": {"route": "rdd-tutor"}, "note": "连续变量过门槛 → RDD"}
+{"id": "route-06", "category": "routing", "skill": "research-tutor", "user": "我追踪了 500 家企业 8 年，没有什么政策冲击，就是想控制企业家能力这种观测不到的个体差异。", "expect": {"route": "fe-tutor"}, "note": "面板+无政策冲击 → FE"}
+{"id": "route-07", "category": "routing", "skill": "research-tutor", "user": "数字化水平可能内生，我想用'所在地区数字基础设施水平'当工具变量做 2SLS。", "expect": {"route": "iv-tutor"}, "note": "候选工具变量 → IV"}
+{"id": "route-08", "category": "routing", "skill": "research-tutor", "user": "我刚下载了 CFPS 数据，好几个表，缺失值很多，不知道第一步该干嘛，变量也不知道怎么构造。", "expect": {"route": "data-tutor"}, "note": "数据准备阶段 → data-tutor"}
+{"id": "route-09", "category": "routing", "skill": "research-tutor", "user": "我的因变量是'是否正规就业'，只有 0 和 1，核心自变量是数字化水平指数。", "expect": {"route": "ols-tutor"}, "note": "0/1 因变量 → OLS(LPM/Logit 分支)"}
+{"id": "route-10", "category": "routing", "skill": "research-tutor", "user": "我想跑双向固定效应。", "expect": {"contains_any": ["处理", "政策"], "contains": ["？"]}, "note": "歧义触发：必须先问有无处理事件，不得直接路由"}

@@ -1,0 +1,16 @@
+{"id": "mis-did-01", "category": "misconception", "skill": "did-tutor", "user": "我觉得事件研究法系数不显著就说明平行趋势成立，不用再做别的检验了。", "expect": {"flag": true}, "note": "把不显著当成立，正例"}
+{"id": "mis-did-02", "category": "misconception", "skill": "did-tutor", "user": "平行趋势检验还没通过，现在不能直接报告显著。", "expect": {"flag": false}, "note": "否定存疑语境，反例"}
+{"id": "mis-did-03", "category": "misconception", "skill": "did-tutor", "user": "我并没有说估出 8% 就可以直接报告显著，我只是在文章里看到这个数字。", "expect": {"flag": false}, "note": "质问式澄清，反例"}
+{"id": "mis-did-04", "category": "misconception", "skill": "did-tutor", "user": "双重差分嘛，标准误聚类到个体层面就行了吧？", "expect": {"flag": true}, "note": "聚类层级误解，正例"}
+{"id": "mis-rdd-01", "category": "misconception", "skill": "rdd-tutor", "user": "DID 里控制了驱动变量就等于 RDD 了吧。", "expect": {"flag": true}, "note": "精确组合词，正例"}
+{"id": "mis-rdd-02", "category": "misconception", "skill": "rdd-tutor", "user": "等等，DID 里控制了驱动变量并不等于 RDD 吧？两者识别信息来源不一样。", "expect": {"flag": false}, "note": "邻接+否定，反例"}
+{"id": "mis-rdd-03", "category": "misconception", "skill": "rdd-tutor", "user": "RDD 跑出来的显著系数可以推广解释为政策对全部样本的平均效应。", "expect": {"flag": true}, "note": "RLATE 外推误解，正例"}
+{"id": "mis-ols-01", "category": "misconception", "skill": "ols-tutor", "user": "R 方高就说明模型好，因果结论就可信。", "expect": {"flag": true}, "note": "R方误解，正例"}
+{"id": "mis-ols-02", "category": "misconception", "skill": "ols-tutor", "user": "显著并不等于因果，这个我知道，OLS 只能说条件相关。", "expect": {"flag": false}, "note": "否定语境，反例"}
+{"id": "mis-fe-01", "category": "misconception", "skill": "fe-tutor", "user": "固定效应控制了所有遗漏变量，所以很稳。", "expect": {"flag": true}, "note": "FE 万能误解，正例"}
+{"id": "mis-fe-02", "category": "misconception", "skill": "fe-tutor", "user": "固定效应并不能控制随时间变化的遗漏变量，对吧？所以我还在担心政策冲击的事。", "expect": {"flag": false}, "note": "正确理解+疑问，反例"}
+{"id": "mis-scm-01", "category": "misconception", "skill": "synctrl-tutor", "user": "政策后 gap 挺大的，那就可以直接说效应显著了吧？", "expect": {"flag": true}, "note": "gap≠显著，正例"}
+{"id": "mis-scm-02", "category": "misconception", "skill": "synctrl-tutor", "user": "我不是说拟合好就完事了，我知道还要做安慰剂排序，只是 donor pool 还没选好。", "expect": {"flag": false}, "note": "否定+讨论，反例"}
+{"id": "mis-iv-01", "category": "misconception", "skill": "iv-tutor", "user": "工具变量的外生性可以用过度识别检验来证明，所以多放几个工具就行。", "expect": {"flag": true}, "note": "外生性检验误解，正例"}
+{"id": "mis-data-01", "category": "misconception", "skill": "data-tutor", "user": "缺失值不用想那么多，直接删掉就行。", "expect": {"flag": true}, "note": "缺失值删除误解，正例"}
+{"id": "mis-data-02", "category": "misconception", "skill": "data-tutor", "user": "异常值不一定都要删，得先看它是录入错误还是真实的极端值。", "expect": {"flag": false}, "note": "正确理解，反例"}
